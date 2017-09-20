@@ -1,0 +1,10 @@
+1) Load the 9Now page in Chrome
+2) Open the developer tools (F12) and go to the network tab
+3) Apply a filter of "master\.m3u8|\.vtt" and tick the Regex checkbox
+4) Load the episode you want to rip
+5) From the m3u8 file, find the URL to the quality you want to rip
+6) From the vtt file, get the URL and download it with wget 'urlhere' -O subs.vtt
+7) Use ffmpeg to download decrypt and download the file in an mkv container: "ffmpeg -hwaccel d3d11va -i 'url here' -c:a copy -c:v copy download.mp4"
+8) Convert vtt subs to srt format: vtt-to-srt subs.vtt
+9) Transcode the video on local machine and mux in subs: quick_encode_tvshow download.mkv subs.srt
+10) Rename the file
