@@ -6,3 +6,5 @@
 6) From the vtt file, get the URL 
 7) Run download_9now_video.py with the information you got and the filename you want, not including the extension! eg:
    download_9now_video 'The.Block.S13E31.720p.WEB-DL.x264' 'https://9nowvideourlgoeshere' 'https://9nowvttsubtitleurlgoeshere'
+
+   

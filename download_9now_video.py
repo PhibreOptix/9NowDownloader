@@ -99,10 +99,11 @@ def main():
     # Clean up the staging files
     print("*** Starting Cleaning Up Files ***")
     os.remove(staging_video_filename)
-    os.remove(srt_subs_filename)
     
     if use_subtitles:
         os.remove(staging_mkv_filename)
+        os.remove(srt_subs_filename)
+        os.remove(staging_subs_filename)
     
     print("*** Completed Cleaning Up Files ***")
 
